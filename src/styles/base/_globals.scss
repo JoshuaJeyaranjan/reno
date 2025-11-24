@@ -1,0 +1,12 @@
+// =============================
+// base/_globals.scss
+// =============================
+body {
+  font-family: $font-stack;
+  background: var(--bg);
+  color: var(--text);
+  @include smooth-transition;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+

@@ -1,0 +1,7 @@
+// =============================
+// layout/_container.scss
+// =============================
+.container {
+  width: min($container-max-width, 90%);
+  margin: 0 auto;
+}

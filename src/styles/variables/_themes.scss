@@ -1,0 +1,21 @@
+
+// =============================
+// variables/_themes.scss
+// (Assigns SCSS vars to CSS custom props)
+// =============================
+
+:root {
+  --bg: #{$light-bg};
+  --surface: #{$light-surface};
+  --text: #{$light-text};
+  --accent: #{$light-accent};
+  --transition-speed: 0.25s;
+}
+
+.dark-mode {
+  --bg: #{$dark-bg};
+  --surface: #{$dark-surface};
+  --text: #{$dark-text};
+  --accent: #{$dark-accent};
+}
+

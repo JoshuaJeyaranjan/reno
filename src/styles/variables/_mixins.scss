@@ -1,0 +1,6 @@
+// =============================
+// variables/_mixins.scss
+// =============================
+@mixin smooth-transition {
+  transition: background var(--transition-speed) ease, color var(--transition-speed) ease;
+}

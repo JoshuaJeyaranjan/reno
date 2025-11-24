@@ -1,0 +1,46 @@
+
+// Footer Styles
+.footer {
+  background: var(--surface);
+  padding: 3rem 2rem;
+  border-top: 1px solid var(--border);
+  margin-top: 4rem;
+  transition: background var(--transition-fast), border var(--transition-fast);
+
+  &__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  &__section {
+    h4 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    p,
+    a {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      display: block;
+      margin-bottom: 0.5rem;
+
+      &:hover {
+        color: var(--brand-primary);
+      }
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+  }
+}
