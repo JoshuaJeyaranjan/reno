@@ -3,23 +3,23 @@
 // Master stylesheet importing all partials
 // =============================
 
-@use 'variables/colors';
-@use 'variables/typography';
-@use 'variables/spacing';
-@use 'variables/mixins';
-@use 'variables/themes';
+@use 'variables/colors'  as *;
+@use 'variables/typography' as *;
+@use 'variables/spacing' as *;
+@use 'variables/mixins' as *;
+@use 'variables/themes' as *;
 
-@use 'base/reset';
-@use 'base/globals';
+@use 'base/reset' as *;
+@use 'base/globals' as *;
 
-@use 'layout/container';
-@use 'layout/sections';
+@use 'layout/container' as *;
+@use 'layout/sections' as *;
 
-@use 'components/buttons';
-@use 'components/utilities';
-@use 'components/services';
-@use 'components/nav';
-@use 'components/footer';
+@use 'components/buttons' as *;
+@use 'components/utilities' as *;
+@use 'components/services' as *;
+@use 'components/nav' as *;
+@use 'components/footer' as *;
 
-@use 'pages/about_contact';
-@use 'pages/services';
+@use 'pages/about_contact' as *;
+@use 'pages/services' as *;
