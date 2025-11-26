@@ -44,6 +44,7 @@
   .form-textarea {
     min-height: 120px;
     resize: vertical;
+    font-family: inherit;
   }
 
   .btn-accent {
@@ -57,7 +58,7 @@
     transition: background-color var(--transition-fast), transform var(--transition-fast);
 
     &:hover:not(:disabled) {
-      background-color: var(--hover);
+      background-color: var(--accent);
       transform: translateY(-2px);
     }
 
