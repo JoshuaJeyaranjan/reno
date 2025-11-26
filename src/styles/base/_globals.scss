@@ -1,8 +1,24 @@
 // =============================
 // base/_globals.scss
 // =============================
+@use '../variables/colors' as *; 
+@use '../variables/typography' as *; 
+@use '../variables/mixins' as *; 
+@use '../variables/themes' as *; 
+
+
+
+html, body {
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 200;  
+  line-height: 1.2;
+}
+
 body {
-  font-family: $font-stack;
   background: var(--bg);
   color: var(--text);
   @include smooth-transition;

@@ -3,7 +3,7 @@
 // variables/_themes.scss
 // (Assigns SCSS vars to CSS custom props)
 // =============================
-
+@use 'colors' as *;
 :root {
   --bg: #{$light-bg};
   --surface: #{$light-surface};
@@ -12,7 +12,7 @@
   --transition-speed: 0.25s;
 }
 
-.dark-mode {
+[data-theme="dark"] {
   --bg: #{$dark-bg};
   --surface: #{$dark-surface};
   --text: #{$dark-text};

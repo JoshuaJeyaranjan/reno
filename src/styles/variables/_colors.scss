@@ -1,15 +1,31 @@
-
-
 // =============================
 // variables/_colors.scss
 // =============================
-$light-bg: #f8f8f8;
-$light-surface: #ffffff;
-$light-text: #1a1a1a;
-$light-accent: #cc8a2c;
 
+// ---------- LIGHT THEME ----------
+$light-bg: #f8f8f8;             // app background
+$light-surface: #ffffff;        // cards, nav, panels
+$light-text: #1a1a1a;           // primary text
+$light-text-secondary: #4a4a4a; // secondary text, subheadings
+$light-accent: #cc8a2c;         // brand accent, buttons
+$light-border: #e0e0e0;         // borders, dividers
+$light-success: #28a745;        // success messages
+$light-warning: #ffc107;        // warning messages
+$light-error: #dc3545;          // error messages
+$light-info: #17a2b8;           // info messages
+$light-hover: #f0e0b0;          // hover background for buttons/links
+$light-disabled: #cfcfcf;       // disabled state
+
+// ---------- DARK THEME ----------
 $dark-bg: #0e0e0f;
 $dark-surface: #1a1a1c;
 $dark-text: #e6e6e6;
+$dark-text-secondary: #b0b0b0;
 $dark-accent: #e7a84f;
-
+$dark-border: #2a2a2a;
+$dark-success: #38d77a;
+$dark-warning: #ffcb52;
+$dark-error: #ff6b6b;
+$dark-info: #66d9ff;
+$dark-hover: #3c2f1c;
+$dark-disabled: #4a4a4a;

@@ -4,22 +4,9 @@
 // =============================
 
 @use 'variables/colors'  as *;
-// @use 'variables/typography' as *;
-// @use 'variables/spacing' as *;
+@use 'variables/typography' as *;
+@use 'variables/spacing' as *;
 @use 'variables/mixins' as *;
-// @use 'variables/themes' as *;
-
 @use 'base/reset' as *;
-// @use 'base/globals' as *;
-
-// @use 'layout/container' as *;
-// @use 'layout/sections' as *;
-
-// @use 'components/buttons' as *;
-// @use 'components/utilities' as *;
-// @use 'components/services' as *;
-// @use 'components/nav' as *;
-// @use 'components/footer' as *;
-//test 
-@use 'pages/about_contact' as *;
-@use 'pages/services' as *;
+@use 'base/globals' as *;
+@use 'variables/themes' as *;

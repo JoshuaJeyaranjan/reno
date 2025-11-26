@@ -1,4 +1,4 @@
-import './App.css'
+import './styles/main.scss'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { ThemeProvider } from './context/ThemeContext.jsx'
 import HomePage from './pages/HomePage/HomePage.jsx'
@@ -7,12 +7,10 @@ import Footer from './components/Footer/Footer.jsx'
 import AboutPage from './pages/AboutPage/AboutPage.jsx'
 import ContactPage from './pages/ContactPage/ContactPage.jsx'
 import ServicePage from './pages/ServicePage/ServicePage.jsx'
-function App() {
-  
 
+function App() {
   return (
     <ThemeProvider>
-
     <BrowserRouter>
     <Nav/>
     <Routes>
@@ -26,5 +24,4 @@ function App() {
     </ThemeProvider>
   )
 }
-
 export default App

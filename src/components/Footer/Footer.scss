@@ -1,5 +1,3 @@
-
-// Footer Styles
 .footer {
   background: var(--surface);
   padding: 3rem 2rem;
@@ -17,23 +15,34 @@
 
   &__section {
     h4 {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       margin-bottom: 1rem;
-      font-weight: 600;
-      color: var(--text-primary);
+      font-weight: 200;
+      color: var(--accent);
+      
     }
 
     p,
     a {
       font-size: 0.95rem;
-      color: var(--text-secondary);
       line-height: 1.5;
       display: block;
       margin-bottom: 0.5rem;
+      color: var(--text-secondary);
+      transition: color var(--transition-fast), opacity var(--transition-fast);
+      text-decoration: none;
+    }
 
-      &:hover {
-        color: var(--brand-primary);
-      }
+    a:hover {
+      color: var(--accent);
+      opacity: 0.8;
+    }
+
+    /* Active Footer Link (NavLink auto-gets .active) */
+    a.active {
+      color: var(--accent);
+      font-weight: 600;
+      
     }
   }
 
@@ -42,5 +51,10 @@
     margin-top: 3rem;
     font-size: 0.85rem;
     color: var(--text-secondary);
+    
   }
+}
+
+.quick-links a {
+ max-width: 5rem;
 }

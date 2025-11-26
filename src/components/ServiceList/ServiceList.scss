@@ -1,0 +1,43 @@
+@use "../../styles/variables/colors" as *;
+
+.service-category {
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  background: var(--surface);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+  }
+}
+
+.service-category-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  
+}
+
+.accent-bar {
+  width: 6px;
+  height: 30px;
+  background: var(--accent);
+  border-radius: 3px;
+  margin-right: 0.75rem;
+}
+
+.service-category-title {
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+  font-weight: 100;
+  color: var(--text);
+  margin: 0;
+}
+
+.service-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
