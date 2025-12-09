@@ -1,0 +1,45 @@
+// =============================
+// src/components/CategoryPage.scss
+// =============================
+
+.category-services {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background: var(--surface);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: background var(--transition-fast), box-shadow var(--transition-fast);
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0.75rem 1rem;
+      background: var(--bg);
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      font-weight: 500;
+      text-align: center;
+      transition: background var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+
+      &:hover {
+        background: var(--accent);
+        color: var(--surface);
+        transform: translateY(-2px);
+        cursor: pointer;
+      }
+    }
+  }
+}

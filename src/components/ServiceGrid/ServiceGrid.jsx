@@ -12,6 +12,7 @@ export default function ServiceGrid({ services }) {
           key={index}
           title={category.category}
           items={category.items}
+          slug={category.slug}
         />
       ))}
     </div>

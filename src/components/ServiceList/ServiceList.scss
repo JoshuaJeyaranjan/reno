@@ -34,10 +34,16 @@
   font-weight: 100;
   color: var(--text);
   margin: 0;
+  
 }
 
 .service-items {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.service-category-link {
+  text-decoration: none;
+  color: inherit;
 }

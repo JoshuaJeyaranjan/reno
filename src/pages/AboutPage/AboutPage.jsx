@@ -22,10 +22,7 @@ export default function AboutPage() {
       />  
       <div className="container">
         <div className="about__inner surface">
-      
-
-      
-
+          
           <div className="about__content">
             <div className="about__item">
               <h3 className="about__heading">Our Mission</h3>
