@@ -9,6 +9,7 @@ import ContactPage from './pages/ContactPage/ContactPage.jsx'
 import ServicePage from './pages/ServicePage/ServicePage.jsx'
 import CategoryPageLoader from './pages/CategoryPage/CategoryPageLoader.jsx'
 import ScrollToTop from './components/ScrollToTop.jsx'
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage.jsx'
 function App() {
   return (
     <ThemeProvider>
@@ -21,6 +22,7 @@ function App() {
       <Route path='/contact' element={<ContactPage />} />
       <Route path='/services' element={<ServicePage />} />
       <Route path="/services/:slug" element={<CategoryPageLoader/>} />
+      <Route path='*' element={<NotFoundPage/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>
