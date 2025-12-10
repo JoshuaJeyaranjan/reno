@@ -22,8 +22,7 @@ export default function CategoryPage({
       />
 
       {/* Slideshow */}
-      <CategorySlideshow
-        
+      <CategorySlideshow        
         images={images}
       />
 

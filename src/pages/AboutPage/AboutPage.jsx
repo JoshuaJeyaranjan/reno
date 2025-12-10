@@ -7,8 +7,10 @@ import React from "react";
 import "./AboutPage.scss";
 import Hero from "../../components/Hero/Hero";
 import SectionIntro from "../../components/SectionIntro/SectionIntro.jsx";
+import ContactForm from "../../components/ContactForm/ContactForm.jsx";
 export default function AboutPage() {
   return (
+    <>
     <section className="about section">
 
             <Hero
@@ -54,7 +56,11 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+        
       </div>
+      
     </section>
+    <ContactForm />
+    </>
   );
 }

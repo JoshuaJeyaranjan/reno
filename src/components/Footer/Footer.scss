@@ -9,40 +9,40 @@
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__section {
     h4 {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       margin-bottom: 1rem;
-      font-weight: 200;
+      font-weight: 600;
       color: var(--accent);
-      
     }
 
-    p,
-    a {
+    a.footer-link {
+      display: block;
       font-size: 0.95rem;
       line-height: 1.5;
-      display: block;
       margin-bottom: 0.5rem;
       color: var(--text-secondary);
-      transition: color var(--transition-fast), opacity var(--transition-fast);
       text-decoration: none;
-    }
+      transition: color var(--transition-fast), opacity var(--transition-fast);
 
-    a:hover {
-      color: var(--accent);
-      opacity: 0.8;
-    }
+      &:hover {
+        color: var(--accent);
+        opacity: 0.8;
+      }
 
-    /* Active Footer Link (NavLink auto-gets .active) */
-    a.active {
-      color: var(--accent);
-      font-weight: 600;
-      
+      &.active {
+        color: var(--accent);
+        font-weight: 600;
+      }
     }
   }
 
@@ -51,10 +51,12 @@
     margin-top: 3rem;
     font-size: 0.85rem;
     color: var(--text-secondary);
-    
   }
-}
 
-.quick-links a {
- max-width: 5rem;
+  // Optional: Add spacing for service and quick links on mobile
+  .service-links,
+  .quick-links {
+    display: flex;
+    flex-direction: column;
+  }
 }

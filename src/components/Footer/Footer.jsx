@@ -1,6 +1,6 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import "./Footer.scss";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import './Footer.scss';
 
 export default function Footer() {
   return (
@@ -10,52 +10,35 @@ export default function Footer() {
         {/* CONTACT SECTION */}
         <div className="footer__section">
           <h4>Contact</h4>
-          <a href="mailto:info@renoco.com">info@renoco.com</a>
-          <a href="tel:+15551234567">(555) 123-4567</a>
-          <a
-            href="https://maps.google.com/?q=123+Renovation+St,+Cityville"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            123 Renovation St., Cityville
-          </a>
+          <a className="footer-link" href="mailto:camarunpm@gmail.com">camarunpm@gmail.com</a>
+          <a className="footer-link" href="tel:+14163002031">(416) 300-2031</a>
         </div>
 
         {/* SERVICES SECTION */}
-        <div className="footer__section">
+        <div className="footer__section service-links">
           <h4>Services</h4>
-          <p>Demolition & Cleanup</p>
-          <p>Flooring</p>
-          <p>Drywall</p>
-          <p>Paint & Finishing</p>
-          <p>Garage & Basement</p>
-          <p>Lighting & Doors</p>
+          <NavLink className="footer-link" to="/services/demolition-cleanup-junk-removal" end>
+            Demolition & Cleanup
+          </NavLink>
+          <NavLink className="footer-link" to="/services/flooring" end>Flooring</NavLink>
+          <NavLink className="footer-link" to="/services/drywall" end>Drywall</NavLink>
+          <NavLink className="footer-link" to="/services/paint" end>Paint</NavLink>
+          <NavLink className="footer-link" to="/services/garage-finishing" end>Garage Finishing</NavLink>
+          <NavLink className="footer-link" to="/services/lighting" end>Lighting</NavLink>
         </div>
 
-        {/* QUICK LINKS */}
+        {/* QUICK LINKS SECTION */}
         <div className="footer__section quick-links">
           <h4>Quick Links</h4>
-
-          <NavLink to="/" end>
-            Home
-          </NavLink>
-
-          <NavLink to="/services">
-            Services
-          </NavLink>
-
-          <NavLink to="/about">
-            About
-          </NavLink>
-
-          <NavLink to="/contact">
-            Contact
-          </NavLink>
+          <NavLink className="footer-link" to="/" end>Home</NavLink>
+          <NavLink className="footer-link" to="/services">Services</NavLink>
+          <NavLink className="footer-link" to="/about">About</NavLink>
+          <NavLink className="footer-link" to="/contact">Contact</NavLink>
         </div>
       </div>
 
       <div className="footer__bottom">
-        &copy; {new Date().getFullYear()} RenoCo. All rights reserved.
+        &copy; {new Date().getFullYear()} Camarun Property Management. All rights reserved.
       </div>
     </footer>
   );

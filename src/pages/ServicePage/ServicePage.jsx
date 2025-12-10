@@ -7,9 +7,12 @@ import { servicesData } from "../../data/services.js";
 import ServiceGrid from "../../components/ServiceGrid/ServiceGrid.jsx";
 import './ServicePage.scss';
 import SectionIntro from "../../components/SectionIntro/SectionIntro.jsx";
+import ContactForm from "../../components/ContactForm/ContactForm.jsx";
 import Hero from "../../components/Hero/Hero.jsx";
 export default function ServicePage() {
   return (
+    <>
+    
     <div className="services-page">
       <Hero
       title="Explore Our Comprehensive Renovation Services"
@@ -24,5 +27,7 @@ export default function ServicePage() {
                 services={servicesData}
               />
     </div>
+    <ContactForm />
+    </>
   );
 }

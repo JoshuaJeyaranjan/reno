@@ -1,8 +1,7 @@
 @use '../../styles/variables/colors' as *;
 
 .about {
-  
-
+  margin-bottom: 2rem;
   .about__inner {
     padding: 2.5rem;
     border-radius: 1rem;
@@ -28,6 +27,7 @@
   .about__content {
     display: grid;
     gap: 2rem;
+    
   }
 
   .about__item {

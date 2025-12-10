@@ -5,13 +5,14 @@ import { Link } from "react-router-dom";
 
 export default function ServiceList({ title, items, slug }) {
   return (
-    <div className="service-category surface">
-      <Link to={`/services/${slug}`} className="service-category-link"> 
+    <Link to={`/services/${slug}`} className="service-category-link service-category surface "> 
+    <div className="">
+      
       <div className="service-category-header">
         <div className="accent-bar"></div>
         <h3 className="service-category-title">{title}</h3>
       </div>
-      </Link>
+      
 
       <ul className="service-items">
         {items.map((item, index) => (
@@ -23,5 +24,6 @@ export default function ServiceList({ title, items, slug }) {
         ))}
       </ul>
     </div>
+    </Link>
   );
 }
