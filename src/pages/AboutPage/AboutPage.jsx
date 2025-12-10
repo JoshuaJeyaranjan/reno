@@ -15,11 +15,11 @@ export default function AboutPage() {
 
             <Hero
       title="Building Dreams, One Renovation at a Time" 
-      subtitle="At RenoCo, we specialize in turning your renovation visions into reality with quality craftsmanship and exceptional service."
+      subtitle="At Camarun, we specialize in turning your renovation visions into reality with quality craftsmanship and exceptional service."
       backgroundUrl="https://plus.unsplash.com/premium_photo-1682597000374-9cfb5a0bdf98?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       />
     <SectionIntro
-        title="About Camarun Renovations"
+        title="About Camarun"
         text="Camarun Renovations has been transforming homes and enhancing lives for over a decade. Founded on the principles of quality, integrity, and customer satisfaction, we have built a reputation as one of the most trusted renovation companies in the region. Our team of skilled professionals is passionate about delivering exceptional craftsmanship and personalized service on every project, big or small."
       />  
       <div className="container">
