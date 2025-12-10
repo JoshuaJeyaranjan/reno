@@ -24,7 +24,7 @@ export default function ContactPage() {
   return (
     <div className="contact-page">
       <Hero
-        title="Get in Touch with RenoCo"
+        title="Get in Touch with Camarun"
         subtitle="We're here to help with all your renovation needs. Contact us today for a free consultation!"
         backgroundUrl="https://images.unsplash.com/photo-1758598306263-1da3d660a056?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         ctaLink="#contact-form"
