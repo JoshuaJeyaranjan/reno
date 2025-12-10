@@ -1,0 +1,28 @@
+.section-intro {
+  width: 100%;
+  padding: 3rem 2rem;
+  text-align: center;
+  background: var(--surface-dark);
+  border-bottom: 1px solid var(--border);
+}
+.section-intro__inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.section-intro h2 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-weight: 100;
+}
+.section-intro h3 {
+  font-size: 1.3rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.section-intro p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}/*# sourceMappingURL=SectionIntro.css.map */

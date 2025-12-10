@@ -2,9 +2,10 @@
   background: var(--surface);
   padding: 3rem 2rem;
   border-top: 1px solid var(--border);
-  margin-top: 4rem;
+  margin-top: 2rem;
   transition: background var(--transition-fast), border var(--transition-fast);
-
+ border-top: 1px solid var(--accent);
+ border-bottom: 1px solid var(--accent);
   &__content {
     max-width: 1200px;
     margin: 0 auto;

@@ -1,0 +1,67 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  background: var(--surface);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background var(--transition-fast);
+}
+.contact-form .form-label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+.contact-form .form-input,
+.contact-form .form-textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-size: 1rem;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+  font-family: inherit;
+}
+.contact-form .form-input:focus,
+.contact-form .form-textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+.contact-form .form-input:disabled,
+.contact-form .form-textarea:disabled {
+  background: var(--disabled);
+  cursor: not-allowed;
+}
+.contact-form .form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.contact-form .btn-accent {
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  background-color: var(--accent);
+  color: var(--text-primary);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+.contact-form .btn-accent:hover:not(:disabled) {
+  background-color: var(--accent);
+  transform: translateY(-2px);
+}
+.contact-form .btn-accent:disabled {
+  background-color: var(--disabled);
+  cursor: not-allowed;
+}
+
+#contact-form {
+  scroll-margin-top: 100px;
+}/*# sourceMappingURL=ContactForm.css.map */

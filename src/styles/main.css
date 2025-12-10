@@ -1,0 +1,43 @@
+:root {
+  --font-body: "Montserrat", sans-serif;
+  --font-heading: "Zelando Sans Expanded", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #f8f8f8;
+  --surface: #ffffff;
+  --text: #1a1a1a;
+  --accent: #cc8a2c;
+  --transition-speed: 0.25s;
+}
+
+[data-theme=dark] {
+  --bg: #0e0e0f;
+  --surface: #1a1a1c;
+  --text: #e6e6e6;
+  --accent: #e7a84f;
+}
+
+html, body {
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 200;
+  line-height: 1.2;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background var(--transition-speed) ease, color var(--transition-speed) ease;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}/*# sourceMappingURL=main.css.map */

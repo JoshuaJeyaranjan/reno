@@ -46,7 +46,7 @@ export default function ContactForm() {
       setStatusType("success");
       setFormData({ name: "", email: "", message: "" });
     } catch (err) {
-      console.error("EmailJS error:", err);
+      
       setStatusMessage("⚠️ Failed to send your message. Please try again later.");
       setStatusType("error");
     } finally {

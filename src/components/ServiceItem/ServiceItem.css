@@ -1,0 +1,22 @@
+.service-item {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0;
+  font-size: 1.05rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+.service-item:hover {
+  transform: translateX(6px);
+  color: var(--accent);
+}
+
+.bullet {
+  font-size: 1.4rem;
+  color: var(--accent);
+  margin-right: 0.5rem;
+}
+
+.service-text {
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+}/*# sourceMappingURL=ServiceItem.css.map */

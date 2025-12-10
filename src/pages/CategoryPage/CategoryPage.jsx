@@ -4,6 +4,7 @@ import "./CategoryPage.scss";
 import '../../components/SectionIntro/SectionIntro.jsx';
 import SectionIntro from "../../components/SectionIntro/SectionIntro.jsx";
 import Hero from "../../components/Hero/Hero.jsx";
+import ContactForm from "../../components/ContactForm/ContactForm.jsx";
 export default function CategoryPage({
   title,
   description,
@@ -11,7 +12,6 @@ export default function CategoryPage({
   services = [],
   children
 }) {
-    console.log(description)
   return (
     <div className="category-page">
         <Hero
@@ -26,10 +26,10 @@ export default function CategoryPage({
         images={images}
       />
 
-      <SectionIntro
+      {/* <SectionIntro
         title={title}
         subtitle={description}
-      />    
+      />     */}
 
       {/* Optional Services Block */}
       {services.length > 0 && (
@@ -44,11 +44,11 @@ export default function CategoryPage({
       )}
 
       {/* Optional extra content */}
-      {children && (
+      
         <section className="category-extra section container">
-          {children}
+          <ContactForm />
         </section>
-      )}
+      
     </div>
   );
 }

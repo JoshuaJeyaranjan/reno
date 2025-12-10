@@ -9,9 +9,7 @@ export default function CategorySlideshow({ title, description, images = [] }) {
   const [index, setIndex] = useState(0);
 
   // Log the image URLs for debugging
-  useEffect(() => {
-    console.log("CategorySlideshow images:", images);
-  }, [images]);
+  
 
   const openLightbox = (i) => {
     setIndex(i);

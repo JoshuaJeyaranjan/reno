@@ -19,6 +19,7 @@ export default function CategoryPageLoader() {
       description={category.description}
       images={category.images}
       services={category.items}
+      
     />
   );
 }
